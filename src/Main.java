@@ -10,6 +10,10 @@ public class Main {
         System.out.println("WELCOME TO PUMPGYM");
 
         System.out.println("TESTE");
+        System.out.println("TESTE2");
+        System.out.println("TESTE2");
+        System.out.println("TESTE2");
+
 
     }
 }
