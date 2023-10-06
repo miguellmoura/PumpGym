@@ -9,5 +9,7 @@ public class Main {
 
         System.out.println("WELCOME TO PUMPGYM");
 
+        System.out.println("TESTE");
+
     }
 }
