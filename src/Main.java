@@ -8,6 +8,7 @@ public class Main {
         // Press Ctrl+R or click the green arrow button in the gutter to run the code
 
 
+
         Treino costa = new Treino("Superiores", "Costas");
         System.out.println(costa.tipo());
         // Academia smartfit = new Academia()
