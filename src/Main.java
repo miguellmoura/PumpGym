@@ -5,26 +5,13 @@ public class Main {
         // Press Opt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it;
 
-        // Press Ctrl+R or click the green arrow button in the gutter to run the code.
-
-        System.out.println("WELCOME TO PUMPGYM");
-
-        System.out.println("TESTE");
-        System.out.println("TESTE2");
-        System.out.println("TESTE");
-        System.out.println("oi ");
-        System.out.println("matuiiii");
+        // Press Ctrl+R or click the green arrow button in the gutter to run the code
 
 
 
-        System.out.println("TESTE BRANCHE EU MIGUI");
-
-
-
-        System.out.println("TESTE5");
-
-        System.out.println("TESTANDO O REPOSITORIO");
-
+        Treino costa = new Treino("Superiores", "Costas");
+        System.out.println(costa.tipo());
+        // Academia smartfit = new Academia()
 
     }
 }
