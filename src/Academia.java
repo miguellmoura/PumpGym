@@ -5,16 +5,16 @@ import java.util.List;
 public class Academia {
     private List<Pessoa> lista;
 
-    public Academia(List<Pessoa> lista) {
+    private Academia(List<Pessoa> lista) {
         this.lista = lista;
     }
 
 
-    public Aluno cadastrarAluno(Aluno aluno) {
+    private Aluno cadastrarAluno(Aluno aluno) {
         return aluno;
     }
 
-    public Professor cadastrarProfessor (Professor professor){
+    private Professor cadastrarProfessor (Professor professor){
         return professor;
     }
 
