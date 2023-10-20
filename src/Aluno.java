@@ -12,6 +12,9 @@ public class Aluno extends Pessoa{
         this.teacher = teacher;
         this.plano = plano;
     }
-
+  
+  public void pagarMensalidade () {
+        System.out.println("O aluno" +  this.nome + "realizou o pagamento da mensalidade");
+    }
 
 }
