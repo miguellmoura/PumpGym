@@ -2,16 +2,18 @@ import java.beans.PersistenceDelegate;
 import java.util.Date;
 
 public class Aluno extends Pessoa{
-    public Treino treino;
-    public Professor teacher;
+    private Treino treino;
+    private Professor teacher;
+    private Plano plano;
 
-    public Aluno(String nome, String cpf, Date dataNascimento, String sexo, String estadoCivil, String endereco, Treino treino, Professor teacher) {
-        super(nome, cpf, dataNascimento, sexo, estadoCivil, endereco);
+    public Aluno(String nome, String cpf, Date dataNascimento, String sexo, String estadoCivil, String endereco, Unidade unidade, Treino treino, Professor teacher, Plano plano) {
+        super(nome, cpf, dataNascimento, sexo, estadoCivil, endereco, unidade);
         this.treino = treino;
         this.teacher = teacher;
+        this.plano = plano;
     }
-
-    public void pagarMensalidade () {
+  
+  public void pagarMensalidade () {
         System.out.println("O aluno" +  this.nome + "realizou o pagamento da mensalidade");
     }
 
