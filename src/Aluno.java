@@ -10,4 +10,9 @@ public class Aluno extends Pessoa{
         this.treino = treino;
         this.teacher = teacher;
     }
+
+    public void pagarMensalidade () {
+        System.out.println("O aluno" +  this.nome + "realizou o pagamento da mensalidade");
+    }
+
 }

@@ -10,8 +10,8 @@ public class Professor extends Pessoa{
         this.salario = salario;
     }
 
-    public Treino criarTreino (){
-        Treino costas = new Treino("Superior", "Costas");
-        return costas;
+    public Treino criarTreino (String tipo, String nomeTreino){
+        Treino treino = new Treino(tipo, nomeTreino);
+        return treino;
     }
 }
