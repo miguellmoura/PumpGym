@@ -9,7 +9,6 @@ public class Academia {
         this.lista = lista;
     }
 
-
     private Aluno cadastrarAluno(Aluno aluno) {
         return aluno;
     }
@@ -17,6 +16,5 @@ public class Academia {
     private Professor cadastrarProfessor (Professor professor){
         return professor;
     }
-
 
 }
