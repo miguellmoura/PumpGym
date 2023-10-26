@@ -1,6 +1,6 @@
 public class Unidade {
-    private String nomeUnidade;
-    private Endereco endereco;
+    protected String nomeUnidade;
+    protected Endereco endereco;
 
     public Unidade(String nomeUnidade, Endereco endereco) {
         this.nomeUnidade = nomeUnidade;

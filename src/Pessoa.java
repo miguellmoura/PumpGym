@@ -3,7 +3,7 @@ import java.util.Date;
 public abstract class Pessoa{
     protected String nome;
     protected String cpf;
-    protected Date dataNascimento;
+    protected int dataNascimento;
     protected String sexo;
     protected String estadoCivil;
     protected String endereco;
@@ -13,7 +13,7 @@ public abstract class Pessoa{
         System.out.println(this.nome + "entrou na academia!");
     }
 
-    public Pessoa(String nome, String cpf, Date dataNascimento, String sexo, String estadoCivil, String endereco, Unidade unidade) {
+    public Pessoa(String nome, String cpf, int dataNascimento, String sexo, String estadoCivil, String endereco, Unidade unidade) {
         this.nome = nome;
         this.cpf = cpf;
         this.dataNascimento = dataNascimento;
