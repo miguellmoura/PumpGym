@@ -9,8 +9,7 @@ public class Academia {
         this.lista = lista;
     }
 
-    private Aluno cadastrarAluno(Aluno aluno) {
-        return aluno;
+    private Aluno cadastrarAluno(Aluno aluno) {return aluno;
     }
 
     private Professor cadastrarProfessor (Professor professor){

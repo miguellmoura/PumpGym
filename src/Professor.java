@@ -2,7 +2,7 @@ public class Professor extends Pessoa{
     protected String turno;
     protected Float salario;
 
-    public Professor(String nome, String cpf, int dataNascimento, String sexo, String estadoCivil, String endereco, Unidade unidade, String turno, Float salario) {
+    public Professor(String nome, String cpf, int dataNascimento, String sexo, String estadoCivil, Endereco endereco, Unidade unidade, String turno, Float salario) {
         super(nome, cpf, dataNascimento, sexo, estadoCivil, endereco, unidade);
         this.turno = turno;
         this.salario = salario;

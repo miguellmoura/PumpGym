@@ -2,23 +2,11 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        Endereco uniBatel = new Endereco("av. batel",456,"5andar","batel","2345334");
+        Inicial tela1= new Inicial();
+        tela1.setVisible(true);
 
-        Treino a_b_ciniciante = new Treino("treino completo", "a_b_ciniciante");
-
-        Unidade pumpGymBatel = new Unidade("unidade batel",uniBatel);
-
-        Professor robertoCarlos = new Professor("roberto carlos","123453",1234421,"hc","solteiro","rua carloa geremias",pumpGymBatel,"manha",1200f);
-
-        Plano famila = new Plano("plano famila",120,true);
-
-       Aluno enrique = new Aluno("enrique", "164.545.535-54" ,10031999,"masculino", "solteiro","rua luiz fernandes ,65", pumpGymBatel, a_b_ciniciante,robertoCarlos,famila);
-
-       enrique.realizouTreino();
-       robertoCarlos.criarTreino("reino de peito","ABC_intermediario");
-       robertoCarlos.alterarTreinoDoAluno(enrique,a_b_ciniciante);
-       enrique.pagarMensalidade();
-
+        AddAlunos novoaluon = new AddAlunos();
+        novoaluon.setVisible(true);
 
 
         Treino costa = new Treino("Superiores", "Costas");
