@@ -27,20 +27,20 @@ public class AddUnidades extends javax.swing.JFrame {
 
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
+        textEndeNumeroUnidade = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
+        textNomeUnidade = new javax.swing.JTextField();
+        textEndeBairoUnidade = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        textEndeRuaUnidade = new javax.swing.JTextField();
+        buttonVoltarUni = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        buttonSalvarUni = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
-        jTextField8 = new javax.swing.JTextField();
+        textEndeComplementoUnidade = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
+        textEndeCepUnidade = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -49,9 +49,9 @@ public class AddUnidades extends javax.swing.JFrame {
 
         jLabel8.setText("Numero:");
 
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+        textEndeNumeroUnidade.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField4ActionPerformed(evt);
+                textEndeNumeroUnidadeActionPerformed(evt);
             }
         });
 
@@ -60,50 +60,55 @@ public class AddUnidades extends javax.swing.JFrame {
 
         jLabel9.setText("Bairro:");
 
-        jTextField10.addActionListener(new java.awt.event.ActionListener() {
+        textNomeUnidade.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField10ActionPerformed(evt);
+                textNomeUnidadeActionPerformed(evt);
             }
         });
 
-        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+        textEndeBairoUnidade.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField6ActionPerformed(evt);
+                textEndeBairoUnidadeActionPerformed(evt);
             }
         });
 
         jLabel13.setText("Nome da unidade");
 
-        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+        textEndeRuaUnidade.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField7ActionPerformed(evt);
+                textEndeRuaUnidadeActionPerformed(evt);
             }
         });
 
-        jButton1.setText("voltar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        buttonVoltarUni.setText("voltar");
+        buttonVoltarUni.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                buttonVoltarUniActionPerformed(evt);
             }
         });
 
         jLabel10.setText("Rua:");
 
-        jButton2.setText("salvar");
+        buttonSalvarUni.setText("salvar");
+        buttonSalvarUni.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonSalvarUniActionPerformed(evt);
+            }
+        });
 
         jLabel11.setText("Complemento:");
 
-        jTextField8.addActionListener(new java.awt.event.ActionListener() {
+        textEndeComplementoUnidade.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField8ActionPerformed(evt);
+                textEndeComplementoUnidadeActionPerformed(evt);
             }
         });
 
         jLabel12.setText("CEP:");
 
-        jTextField9.addActionListener(new java.awt.event.ActionListener() {
+        textEndeCepUnidade.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField9ActionPerformed(evt);
+                textEndeCepUnidadeActionPerformed(evt);
             }
         });
 
@@ -120,29 +125,32 @@ public class AddUnidades extends javax.swing.JFrame {
                                                         .addComponent(jLabel12)
                                                         .addComponent(jLabel10)
                                                         .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(textEndeRuaUnidade, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                         .addGroup(layout.createSequentialGroup()
-                                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                        .addComponent(jLabel8))
-                                                                .addGap(18, 18, 18)
+                                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                                        .addGroup(layout.createSequentialGroup()
+                                                                                .addComponent(jLabel8)
+                                                                                .addGap(41, 41, 41))
+                                                                        .addGroup(layout.createSequentialGroup()
+                                                                                .addComponent(textEndeNumeroUnidade)
+                                                                                .addGap(8, 8, 8)))
                                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                                         .addComponent(jLabel9)
-                                                                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                                        .addComponent(textEndeBairoUnidade, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                                         .addComponent(jLabel11)
-                                                        .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(textEndeComplementoUnidade, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(textEndeCepUnidade, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                         .addComponent(jLabel13)
-                                                        .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addComponent(textNomeUnidade, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                 .addGap(108, 108, 108))
                                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                                .addComponent(jButton1)
+                                                .addComponent(buttonVoltarUni)
                                                 .addGap(63, 63, 63)
                                                 .addComponent(jLabel1)
                                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton2)
+                                .addComponent(buttonSalvarUni)
                                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -151,11 +159,11 @@ public class AddUnidades extends javax.swing.JFrame {
                                 .addContainerGap()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                         .addComponent(jLabel1)
-                                        .addComponent(jButton1))
+                                        .addComponent(buttonVoltarUni))
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(textNomeUnidade, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel7)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -163,57 +171,71 @@ public class AddUnidades extends javax.swing.JFrame {
                                         .addGroup(layout.createSequentialGroup()
                                                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(textEndeRuaUnidade, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(textEndeNumeroUnidade, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(layout.createSequentialGroup()
                                                 .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addComponent(textEndeBairoUnidade, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(textEndeComplementoUnidade, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(textEndeCepUnidade, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton2)
+                                .addComponent(buttonSalvarUni)
                                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>
 
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void textEndeNumeroUnidadeActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
     }
 
-    private void jTextField10ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void textNomeUnidadeActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
     }
 
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void textEndeBairoUnidadeActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
     }
 
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void textEndeRuaUnidadeActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
     }
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void buttonVoltarUniActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+        //botao voltar
+        //açao
+    }
+
+    private void textEndeComplementoUnidadeActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
     }
 
-    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void textEndeCepUnidadeActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
     }
 
-    private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void buttonSalvarUniActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
+        //botao salvar
+        //açao
+         String nomeUnidade = textNomeUnidade.getText();
+         String ruaUnidade = textEndeRuaUnidade.getText();
+         String numeroUnidade =textEndeNumeroUnidade.getName();
+         String bairoaunidade =textEndeBairoUnidade.getText();
+         String complementoUnidade = textEndeComplementoUnidade.getText();
+         String cepUnidade = textEndeCepUnidade.getText();
     }
 
     /**
@@ -252,8 +274,8 @@ public class AddUnidades extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton buttonSalvarUni;
+    private javax.swing.JButton buttonVoltarUni;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -262,11 +284,11 @@ public class AddUnidades extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField textEndeBairoUnidade;
+    private javax.swing.JTextField textEndeCepUnidade;
+    private javax.swing.JTextField textEndeComplementoUnidade;
+    private javax.swing.JTextField textEndeNumeroUnidade;
+    private javax.swing.JTextField textEndeRuaUnidade;
+    private javax.swing.JTextField textNomeUnidade;
     // End of variables declaration
 }
