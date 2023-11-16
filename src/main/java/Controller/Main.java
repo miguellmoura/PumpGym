@@ -1,3 +1,9 @@
+package Controller;
+
+import Model.Treino;
+import View.AddAlunos;
+import View.Inicial;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
@@ -9,9 +15,9 @@ public class Main {
         novoaluon.setVisible(true);
 
 
+
         Treino costa = new Treino("Superiores", "Costas");
         System.out.println(costa.tipo());
-        // Academia smartfit = new Academia()15'x
-
+        // Model.Academia smartfit = new Model.Academia()15'
     }
 }

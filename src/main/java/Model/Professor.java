@@ -1,4 +1,6 @@
-public class Professor extends Pessoa{
+package Model;
+
+public class Professor extends Pessoa {
     protected String turno;
     protected Float salario;
 

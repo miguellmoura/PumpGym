@@ -1,3 +1,5 @@
+package Model;
+
 public class Unidade {
     protected String nomeUnidade;
     protected Endereco endereco;

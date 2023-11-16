@@ -1,6 +1,5 @@
-import java.nio.file.ProviderNotFoundException;
-import java.util.ArrayList;
-import java.util.List;
+package Model;
+
 public class Plano {
     protected String nomePlano;
     protected float valorPlano;

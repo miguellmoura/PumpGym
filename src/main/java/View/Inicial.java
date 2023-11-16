@@ -1,3 +1,4 @@
+package View;
 
 public class Inicial extends javax.swing.JFrame {
 
@@ -39,8 +40,6 @@ public class Inicial extends javax.swing.JFrame {
         jMenuItem_addProfesor = new javax.swing.JMenuItem();
         jMenuItem_addUnidade = new javax.swing.JMenuItem();
         jMenuItem_addTrino = new javax.swing.JMenuItem();
-        jMenu1 = new javax.swing.JMenu();
-        jMenuItem5 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(204, 204, 204));
@@ -59,7 +58,6 @@ public class Inicial extends javax.swing.JFrame {
         });
 
         jCheckBox_Feminino.setText("Feminino");
-
         jCheckBox_platina.setText("platina");
         jCheckBox_platina.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -218,7 +216,7 @@ public class Inicial extends javax.swing.JFrame {
         });
         addAluno.add(jMenuItem_addUnidade);
 
-        jMenuItem_addTrino.setText("add Treino");
+        jMenuItem_addTrino.setText("add treino");
         jMenuItem_addTrino.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem_addTrinoActionPerformed(evt);
@@ -226,17 +224,10 @@ public class Inicial extends javax.swing.JFrame {
         });
         addAluno.add(jMenuItem_addTrino);
 
-        jMenu1.setText("jMenu1");
 
-        jMenuItem5.setText("jMenuItem5");
-        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem5ActionPerformed(evt);
-            }
-        });
-        jMenu1.add(jMenuItem5);
 
-        addAluno.add(jMenu1);
+//
+
 
         jMenuBar1.add(addAluno);
 
@@ -399,7 +390,7 @@ public class Inicial extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel_planos;
     private javax.swing.JLabel jLabel_sexo;
-    private javax.swing.JMenu jMenu1;
+//    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem_addAluno;

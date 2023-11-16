@@ -1,7 +1,10 @@
-/*
+package View;/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
+
+
+import DB.PersisteAluno;
 
 
 /**
@@ -11,7 +14,7 @@
 public class AddAlunos extends javax.swing.JFrame {
 
     /**
-     * Creates new form AddAlunos
+     * Creates new form View.AddAlunos
      */
     public AddAlunos() {
         initComponents();
@@ -31,9 +34,8 @@ public class AddAlunos extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         textDataNacimentoAluno = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        textEndeNumeroAluno = new javax.swing.JTextField();
+//        textEndeNumeroAluno = new javax.swing.JTextField();
         textEstadocivilAluno = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -65,7 +67,7 @@ public class AddAlunos extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setText("Data de nacimento:");
+        jLabel4.setText("Data de nascimento:");
 
         textDataNacimentoAluno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -75,15 +77,14 @@ public class AddAlunos extends javax.swing.JFrame {
 
         jLabel14.setText("unidade");
 
-        jLabel8.setText("Numero:");
 
         jLabel5.setText("Sexo:");
 
-        textEndeNumeroAluno.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textEndeNumeroAlunoActionPerformed(evt);
-            }
-        });
+//        textEndeNumeroAluno.addActionListener(new java.awt.event.ActionListener() {
+//            public void actionPerformed(java.awt.event.ActionEvent evt) {
+//                textEndeNumeroAlunoActionPerformed(evt);
+//            }
+//        });
 
         textEstadocivilAluno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,7 +102,7 @@ public class AddAlunos extends javax.swing.JFrame {
             }
         });
 
-        comboBoxSexoAluno.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "selescionar", "Masculino", "Feminino" }));
+        comboBoxSexoAluno.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "selecionar", "Masculino", "Feminino" }));
         comboBoxSexoAluno.setToolTipText("");
         comboBoxSexoAluno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -132,7 +133,7 @@ public class AddAlunos extends javax.swing.JFrame {
             }
         });
 
-        jLabel12.setText("CEP:");
+        jLabel12.setText("Numero:");
 
         textEndeCEPAluno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -147,14 +148,14 @@ public class AddAlunos extends javax.swing.JFrame {
             }
         });
 
-        comboBoxPlanoAluno.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        comboBoxPlanoAluno.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Plano Standard", "Plano Gold", "Plano Platina", "Plano Platina Premium" }));
         comboBoxPlanoAluno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboBoxPlanoAlunoActionPerformed(evt);
             }
         });
 
-        ComboBoxunidadeAluno.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        ComboBoxunidadeAluno.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Unidade Alto da XV", "Unidade Batel", "Unidade Pinhais", "Unidade Caiuá" }));
 
         jLabel13.setText("Plano:");
 
@@ -217,9 +218,7 @@ public class AddAlunos extends javax.swing.JFrame {
                                         .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(textEndeRuaAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGroup(layout.createSequentialGroup()
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(textEndeNumeroAluno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(jLabel8))
+
                                                 .addGap(18, 18, 18)
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                         .addComponent(jLabel9)
@@ -269,10 +268,8 @@ public class AddAlunos extends javax.swing.JFrame {
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(textEndeRuaAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(textEndeNumeroAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                        .addGroup(layout.createSequentialGroup()
+
                                                                 .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(textEndeBairroAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -311,6 +308,11 @@ public class AddAlunos extends javax.swing.JFrame {
     private void textEndeNumeroAlunoActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
     }
+
+
+
+
+
 
     private void textEstadocivilAlunoActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
@@ -352,7 +354,7 @@ public class AddAlunos extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
-        //Aluno carlos = new Aluno(textNomeAluno,textCpfAluno,textDataNacimentoAluno,comboBoxSexoAluno,textEstadocivilAluno,new Endereco(textEndeRuaAluno,textEndeNumeroAluno,textEndeComplementoAluno,textEndeBairroAluno,textEndeCEPAluno),comboBoxPlanoAluno);
+        //Model.Aluno carlos = new Model.Aluno(textNomeAluno,textCpfAluno,textDataNacimentoAluno,comboBoxSexoAluno,textEstadocivilAluno,new Model.Endereco(textEndeRuaAluno,textEndeNumeroAluno,textEndeComplementoAluno,textEndeBairroAluno,textEndeCEPAluno),comboBoxPlanoAluno);
                 String nomeAluno = textNomeAluno.getText();
                 String cpfAluno = textCpfAluno.getText();
                 String DataNacimento = textDataNacimentoAluno.getText();
@@ -360,7 +362,7 @@ public class AddAlunos extends javax.swing.JFrame {
                 String estadoCivilAluno = textEstadocivilAluno.getText();
                 //endereco
                 String ruaAluno = textEndeRuaAluno.getText();
-                String numeroAluno=textEndeNumeroAluno.getText();
+//                String numeroAluno=textEndeNumeroAluno.getText();
                 String complementoAluno = textEndeComplementoAluno.getText();
                 String bairoAluno= textEndeBairroAluno.getText();
                 String cepAluno = textEndeCEPAluno.getText();
@@ -368,10 +370,38 @@ public class AddAlunos extends javax.swing.JFrame {
                 Object unidadeAluno = ComboBoxunidadeAluno.getSelectedItem();
 
 
+                String alunoFull = "{" +
+                "\"nome\": \"" + nomeAluno + "\"," +
+                "\"cpf\": \"" + cpfAluno + "\"," +
+                "\"dataNascimento\": \"" + DataNacimento + "\"," +
+                "\"sexo\": \"" + sexoAluno + "\"," +
+                "\"estadoCivil\": \"" + estadoCivilAluno + "\"," +
+                "\"ruaDoAluno\": \"" + ruaAluno + "\"," +
+                "\"complemento\": \"" + complementoAluno + "\"," +
+                "\"bairroAluno\": \"" + bairoAluno + "\"," +
+                "\"numeroCasa\": \"" + cepAluno + "\"," +
+                "\"planoAluno\": \"" + planoAluno + "\"," +
+                "\"unidadeAluno\": \"" + unidadeAluno + "\"" +
+                "}";
 
+                System.out.println(alunoFull);
+
+                System.out.println();
+
+                PersisteAluno persisteAluno = new PersisteAluno();
+
+                persisteAluno.salvarEmArquivo("testeEdit.odt", alunoFull);
 
 
     }
+
+
+
+
+
+
+
+    // CRIAR CLASSE ESPECÍFICA PARA CADA ENTIDADE (ALUNO, PERSISTEALUNO; PROFESSOR, PERSISTEPROFESSOR)
 
     /**
      * @param args the command line arguments
@@ -426,14 +456,13 @@ public class AddAlunos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JTextField textCpfAluno;
     private javax.swing.JTextField textDataNacimentoAluno;
     private javax.swing.JTextField textEndeBairroAluno;
     private javax.swing.JTextField textEndeCEPAluno;
     private javax.swing.JTextField textEndeComplementoAluno;
-    private javax.swing.JTextField textEndeNumeroAluno;
+//    private javax.swing.JTextField textEndeNumeroAluno;
     private javax.swing.JTextField textEndeRuaAluno;
     private javax.swing.JTextField textEstadocivilAluno;
     private javax.swing.JTextField textNomeAluno;

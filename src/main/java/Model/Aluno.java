@@ -1,8 +1,8 @@
-import javax.swing.*;
-import java.beans.PersistenceDelegate;
-import java.util.Date;
+package Model;
 
-public class Aluno extends Pessoa{
+import javax.swing.*;
+
+public class Aluno extends Pessoa {
     protected Treino treino;
     protected Professor teacher;
     protected Plano plano;
